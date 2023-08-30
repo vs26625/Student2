@@ -31,7 +31,7 @@ Period 5 - Spanish 3
 
 ## Interests/Hobbies
 
-Outside of school, I enjoy doing badminton, ripstiking, travelling, & playing my instruments.
+Outside of school, I enjoy doing badminton, ripstiking, travelling, & playing my instruments. I play the flute, ukelele, bassoon, and piano!
 
 ## Freeform Picture
 
