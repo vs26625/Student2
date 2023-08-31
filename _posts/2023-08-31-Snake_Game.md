@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Snake Game
 description: The game with the snake to play when your done with work
-type: Hacks(Todo)
+type: hacks
 courses: { compsci: {week: 2} }
 ---
 <style>
@@ -20,7 +20,7 @@ courses: { compsci: {week: 2} }
         display: none;
         border-style: solid;
         border-width: 10px;
-        border-color: #FFFFFF;
+        border-color: #5f966c;
     }
     canvas:focus{
         outline: none;
@@ -66,7 +66,7 @@ courses: { compsci: {week: 2} }
     }
 
     #setting input:checked + label{
-        background-color: #FFF;
+        background-color: #5cc46e;
         color: #000;
     }
 </style>
