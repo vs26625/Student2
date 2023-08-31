@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Snake Game
 description: The game with the snake to play when your done with work
-type: Hacks
+type: Hacks(Todo)
 courses: { compsci: {week: 2} }
 ---
 <style>
