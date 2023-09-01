@@ -7,14 +7,6 @@ title: Varnika's Student Blog
 # Varnika's Home Page 
 Hello! My name name is Varnika (she/her) and this is my home page!
 
-# My Weekly Updates:
-
-| Weeks  | Struggles                                                                                                                                                   | Learned                                                     | Tangibles                      |
-|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|--------------------------------|
-| Week 1 | -localhost instead of 0.0.0.0  -adding an image -understanding what each code means -learning how to change my home page -learning how to change themes | wsl- type of source my computer uses cd- change directory (file) clear- clears code in terminal mkdir- make directory rmdir- remove directory dir- see what is in directory git clone- clones repository _config.yml- settings for blog index.md- home page of blog make- creates/opens server make clean- closes server and cleans files help- shows you commands| [My Blog](http://localhost:4200/student/) |
-| Week 2 |                                                                                                                                                             |                                                             |                                |
-| Week 3 |                                                                                                                                                             |                                                             |                                |
-
 # About me!!
 
 ## Class Schedule:
