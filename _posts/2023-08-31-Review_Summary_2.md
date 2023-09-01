@@ -8,10 +8,10 @@ type: tangibles
 courses: { compsci: {week: 2} }
 ---
 
-## Summary of Accomplishments
+> ## Summary of Accomplishments
 > Update on how this week went
 
-Reviewed with Pair. Discuss/Show evidence.
+> Reviewed with Pair. Discuss/Show evidence.
 Discuss laptop, cloud computer.
 Discuss tools setup and troubles.
 Show personal blog / home page.
