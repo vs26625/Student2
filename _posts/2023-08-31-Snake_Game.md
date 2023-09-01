@@ -66,7 +66,7 @@ courses: { compsci: {week: 2} }
     }
 
     #setting input:checked + label{
-        background-color: #5cc46e;
+        background-color: #FFFFFF;
         color: #000;
     }
 </style>
@@ -79,7 +79,7 @@ courses: { compsci: {week: 2} }
     <div class="container bg-secondary" style="text-align:center;">
         <!-- Main Menu -->
         <div id="menu" class="py-4 text-light">
-            <p>Welcome to Snake, press <span style="background-color: #FFFFFF; color: #000000">space</span> to begin</p>
+            <p> <span style="background-color: #FFFFFF; color: #9bc7b0"> Welcome to Snake, press space to begin</span></p>
             <a id="new_game" class="link-alert">new game</a>
             <a id="setting_menu" class="link-alert">settings</a>
         </div>
@@ -271,7 +271,7 @@ courses: { compsci: {week: 2} }
             }
             // Repaint canvas
             ctx.beginPath();
-            ctx.fillStyle = "royalblue";
+            ctx.fillStyle = "MediumAquaMarine";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             // Paint snake
             for(let i = 0; i < snake.length; i++){
@@ -331,7 +331,7 @@ courses: { compsci: {week: 2} }
         /* Dot for Food or Snake part */
         /////////////////////////////////////////////////////////////
         let activeDot = function(x, y){
-            ctx.fillStyle = "#FFFFFF";
+            ctx.fillStyle = "#cffcd4";
             ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
         }
         /* Random food placement */
@@ -367,7 +367,7 @@ courses: { compsci: {week: 2} }
         let setWall = function(wall_value){
             wall = wall_value;
             if(wall === 0){screen_snake.style.borderColor = "#606060";}
-            if(wall === 1){screen_snake.style.borderColor = "#FFFFFF";}
+            if(wall === 1){screen_snake.style.borderColor = "#4e7360";}
         }
     })();
 </script>
