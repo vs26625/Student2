@@ -21,5 +21,5 @@ Overall: Learning outcome. Building a personal Blog and Connecting to Github.
 > Update Blog to contain all hacks.  Review week with Soni and Nore. Next, look ahead and start plan for next week.  Try to be done and learn your machine before Monday.
 - The laptop that you bring to class every day with ability to operate Development Tools on it.
 - GitHub Account ready and linked, VSCode has all changes pushed/pulled. GitHub is commited with all changes.
-- Slack Account, install the App on Laptop and/or phone, read all latest announcements. 
+- Slack Account, install on Laptop, read all latest announcements. 
 - Markdown table is set and completed for the time being. Images are loading and are resized. Able to navigate through your Blog with ease.
