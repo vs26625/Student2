@@ -2,10 +2,10 @@
 toc: true
 comments: true
 layout: post
-title: Review (Summary) 1
-description: First Summary! Contains all of what I learned this week.
+title: Review (Summary) 2
+description: Second Summary! Contains all of what I learned this week.
 type: tangibles
-courses: { compsci: {week: 1} }
+courses: { compsci: {week: 2} }
 ---
 
 ## Summary of Accomplishments
