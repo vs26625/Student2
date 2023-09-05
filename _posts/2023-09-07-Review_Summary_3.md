@@ -3,7 +3,7 @@ toc: true
 comments: true
 layout: post
 title: Review (Summary) 3
-description: Second Summary! Contains all of what I learned this week.
+description: Third Summary! Contains all of what I learned this week.
 type: tangibles
 courses: { compsci: {week: 3} }
 ---

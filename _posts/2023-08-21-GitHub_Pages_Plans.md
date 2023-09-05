@@ -18,7 +18,7 @@ courses: { compsci: {week: 1} }
 
 
 > ### Partner Live Reiview prep
-> Update Blog to contain all hacks.  Review week with Soni and Nore. Next, look ahead and start plan for next week.  Try to be done and learn your machine before Monday.
+> Update Blog to contain all hacks.  Review week with Soni and Nora. Next, look ahead and start plan for next week.  Try to be done and learn your machine before Monday.
 - The laptop that you bring to class every day with ability to operate Development Tools on it.
 - GitHub Account ready and linked, VSCode has all changes pushed/pulled. GitHub is commited with all changes.
 - Slack Account, install on Laptop, read all latest announcements. 
