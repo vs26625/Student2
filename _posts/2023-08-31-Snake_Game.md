@@ -310,19 +310,19 @@ courses: { compsci: {week: 2} }
         let changeDir = function(key){
             // test key and switch direction
             switch(key) {
-                case 37:    // left arrow
+                case 65:    // (A) left arrow
                     if (snake_dir !== 1)    // not right
                         snake_next_dir = 3; // then switch left
                     break;
-                case 38:    // up arrow
+                case 87:    // (W) up arrow
                     if (snake_dir !== 2)    // not down
                         snake_next_dir = 0; // then switch up
                     break;
-                case 39:    // right arrow
+                case 68:    // (D) right arrow
                     if (snake_dir !== 3)    // not left
                         snake_next_dir = 1; // then switch right
                     break;
-                case 40:    // down arrow
+                case 83:    // (S) down arrow
                     if (snake_dir !== 0)    // not up
                         snake_next_dir = 2; // then switch down
                     break;
@@ -331,8 +331,19 @@ courses: { compsci: {week: 2} }
         /* Dot for Food or Snake part */
         /////////////////////////////////////////////////////////////
         let activeDot = function(x, y){
-            ctx.fillStyle = "#cffcd4";
-            ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
+            //const appleSize = BLOCK;
+            //const appleX = x * BLOCK;
+            //const appleY = y * BLOCK;
+            //ctx.font = `${appleSize}px sans-serif`;
+            //ctx.fillText("🍎", appleX, appleY + appleSize); //this is for the apple emoji
+
+            ctx.fillStyle = "#FFFFFF";
+            ctx.beginPath();
+            ctx.arc(x * BLOCK + BLOCK / 2, y * BLOCK + BLOCK / 2, BLOCK / 2, 0, 2 * Math.PI);
+            ctx.fill(); //this is for the circles
+            
+            //ctx.fillStyle = "#cffcd4";
+            //ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK); //this is the original
         }
         /* Random food placement */
         /////////////////////////////////////////////////////////////
