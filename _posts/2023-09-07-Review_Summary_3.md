@@ -11,7 +11,7 @@ courses: { compsci: {week: 3} }
 > ## Summary of Accomplishments
 > Update on how this week went
 
-> Reviewed with Pair. Discuss/Show evidence.
+> Nore, Soni, and I made a google docs plan to plan for this entire love review. We also did mock testing to prepare for the review.
 When working on customizing our snake game, we found out how to apply the apple to the game. 
 However, the cloud computer doesn't allow you to copy paste emojis on VSCode so it only works on my blog.
 We also added a picture of us to our home page.
