@@ -12,11 +12,9 @@ courses: { compsci: {week: 3} }
 > Update on how this week went
 
 > Reviewed with Pair. Discuss/Show evidence.
-Discuss laptop, cloud computer.
-Discuss tools setup and troubles.
-Show personal blog / home page.
-Show how you are maintaining notes, answering hacks, and showing tangibles.
-Show Jupyter Notebooks and how you have added and organized them in the blog.
-Show evidence of using Slack Account, show app installed on Laptop and/or phone. Show awared of #annoncements, #general, #coding.
-Run make commands to build and test blog locally, before pushing changes to GitHub pages.
-Discuss GitHub Account, show ability to push/pull changes from VSCode.
+When working on customizing our snake game, we found out how to apply the apple to the game. 
+However, the cloud computer doesn't allow you to copy paste emojis on VSCode so it only works on my blog.
+We also added a picture of us to our home page.
+All our hacks, daily plans, and review tickets are up to date containing summaries of our accomplishments. 
+We have also checked in on slack for any new announcements and coding hacks.
+GitHub is also up to date with all our edits.
