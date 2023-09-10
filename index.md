@@ -4,7 +4,7 @@ title: Varnika's Student Blog
 ---
 
 # Varnika's Home Page 
-Hello! My name name is Varnika (she/her) and this is my home page!
+Hello! My name name is Varnika (she/her) and this is my home page! For more about me, you can [click here]() for a photo album of me!
 
 # My Partners!
 
