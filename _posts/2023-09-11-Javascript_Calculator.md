@@ -217,5 +217,3 @@ vantaInstance({
   gyroControls: false
 });
 </script>
-
-
