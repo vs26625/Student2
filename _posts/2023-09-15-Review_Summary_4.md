@@ -12,11 +12,5 @@ courses: { compsci: {week: 4} }
 > Update on how this week went
 
 > Reviewed with Pair. Discuss/Show evidence.
-Discuss laptop, cloud computer.
-Discuss tools setup and troubles.
-Show personal blog / home page.
-Show how you are maintaining notes, answering hacks, and showing tangibles.
-Show Jupyter Notebooks and how you have added and organized them in the blog.
-Show evidence of using Slack Account, show app installed on Laptop and/or phone. Show awared of #annoncements, #general, #coding.
-Run make commands to build and test blog locally, before pushing changes to GitHub pages.
-Discuss GitHub Account, show ability to push/pull changes from VSCode.
+We learned how to code Javascript inside a webstie's (or VSCode's) "Console." I have linked what we learned inside the Hacks Summary and the Daily Plans for this week.
+There wasn't really much we did other that learning Javascript this week. We did try to edit our calculators. Nora and Soni were able to fix the buttons but when I try what they did, VSCode has a problem with the @import command in my calculators code. Everything else is up to date with Slack, GitHub, and my Blog, though.
