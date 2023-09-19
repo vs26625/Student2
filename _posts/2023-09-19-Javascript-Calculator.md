@@ -1,12 +1,10 @@
 ---
-toc: True
-comments: True
-layout: post
 title: JS Calculator
+comments: true
+hide: true
+layout: post
 description: A common way to become familiar with a language is to build a calculator.  This calculator shows off button with actions.
-permalink: /techtalk/home_style
-categories: [C7.0]
-courses: {'compsci': {'week': 4}}
+courses: {'compsci': {'week': 5}}
 type: hacks
 ---
 
@@ -20,7 +18,6 @@ Hack 3: Implement 1 number operation (ie SQRT)
 <!-- 
 HTML implementation of the calculator. 
 -->
-
 
 <!-- 
     Style and Action are aligned with HRML class definitions
@@ -69,6 +66,7 @@ HTML implementation of the calculator.
       <div class="calculator-number">9</div>
       <div class="calculator-operation">*</div>
       <!--row 4-->
+      <div class="calculator-operation">/</div>
       <div class="calculator-clear">A/C</div>
       <div class="calculator-number">0</div>
       <div class="calculator-number">.</div>
@@ -186,16 +184,38 @@ function clearCalc () { // clears calculator
     output.innerHTML = "0";
     nextReady = true;
 }
+// Division button listener 
+const divisionButton = document.querySelector(".calculator-operation"); divisionButton.addEventListener("click", function() { 
+  operation("/");
+}); 
+
+// Divide action 
+function divide() { 
+  if (firstNumber == null) { 
+     firstNumber = parseFloat(output.innerHTML); 
+     nextReady = true; 
+     operator = "/"; return; 
+  } 
+  if (parseFloat(output.innerHTML) === 0) { 
+     alert("Cannot divide by zero!"); 
+     clearCalc(); 
+     return; 
+  } 
+  firstNumber = calculate(firstNumber, parseFloat(output.innerHTML)); 
+  operator = "/"; 
+  output.innerHTML = firstNumber.toString(); 
+  nextReady = true; 
+} 
 </script>
 
 <!-- 
 Vanta animations just for fun, load JS onto the page
 -->
-<script src="/teacher/assets/js/three.r119.min.js"></script>
-<script src="/teacher/assets/js/vanta.halo.min.js"></script>
-<script src="/teacher/assets/js/vanta.birds.min.js"></script>
-<script src="/teacher/assets/js/vanta.net.min.js"></script>
-<script src="/teacher/assets/js/vanta.rings.min.js"></script>
+<script src="/Student2/assets/js/three.r119.min.js"></script>
+<script src="/Student2/assets/js/vanta.halo.min.js"></script>
+<script src="/Student2/assets/js/vanta.birds.min.js"></script>
+<script src="/Student2/assets/js/vanta.net.min.js"></script>
+<script src="/Student2/assets/js/vanta.rings.min.js"></script>
 
 <script>
 // setup vanta scripts as functions
