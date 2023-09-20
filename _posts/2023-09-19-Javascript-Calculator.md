@@ -43,6 +43,10 @@ HTML implementation of the calculator.
     display: flex;
     align-items: center;
   }
+  .calculator-container {
+    display: grid;
+    grid-template-columns: rep(4, 1fr)
+  }
 </style>
 
 <!-- Add a container for the animation -->
@@ -66,10 +70,10 @@ HTML implementation of the calculator.
       <div class="calculator-number">9</div>
       <div class="calculator-operation">*</div>
       <!--row 4-->
-      <div class="calculator-operation">/</div>
       <div class="calculator-clear">A/C</div>
       <div class="calculator-number">0</div>
       <div class="calculator-number">.</div>
+      <div class="calculator-operation">/</div>
       <div class="calculator-equals">=</div>
   </div>
 </div>
@@ -211,11 +215,11 @@ function divide() {
 <!-- 
 Vanta animations just for fun, load JS onto the page
 -->
-<script src="/Student2/assets/js/three.r119.min.js"></script>
-<script src="/Student2/assets/js/vanta.halo.min.js"></script>
-<script src="/Student2/assets/js/vanta.birds.min.js"></script>
-<script src="/Student2/assets/js/vanta.net.min.js"></script>
-<script src="/Student2/assets/js/vanta.rings.min.js"></script>
+<script src="/Student2/asset/js/three.r119.min.js"></script>
+<script src="/Student2/asset/js/vanta.halo.min.js"></script>
+<script src="/Student2/asset/js/vanta.birds.min.js"></script>
+<script src="/Student2/asset/js/vanta.net.min.js"></script>
+<script src="/Student2/asset/js/vanta.rings.min.js"></script>
 
 <script>
 // setup vanta scripts as functions
