@@ -17,10 +17,21 @@ type: hacks
     Count : <span id="count">0.0</span>
     Average : <span id="average">0.0</span>
 </h3>
+<!-- Clear button -->
+<!-- <button onclick="clearScores()">Clear</button> -->
 <!-- Rows -->
 <div id="scores">
     <!-- javascript generated inputs -->
 </div>
+<style>
+  /* Style for input elements */
+  input[type="number"] {
+    background-color: #9ef0ba; /* Change this to the desired background color */
+    color: #000000; /* Change this to the desired text color */
+    border: 1px solid #000000; /* Change this to the desired border color */
+    /* Add other styles as needed */
+  }
+</style>
 <script>
 // Creates a new input box
 function newInputLine(index) {
@@ -74,7 +85,21 @@ function calculator(event) {
             newInputLine(count); // make a new input line
         }
     }
+//function clearScores() {
+// Remove the first input box and label
+    //function clearTable() {
+    //var scoresContainer = document.getElementById('scores');
+    //scoresContainer.innerHTML = ''; // Remove all existing input lines
+    //document.getElementById('total').innerHTML = '0.0';
+    //document.getElementById('count').innerHTML = '0.0';
+    //document.getElementById('average').innerHTML = '0.0';
+    // Creates 1st input box on Window load
+       // newInputLine(0);
+    //}
 }
+// Attach the clearScore function to the "Clear" button
+//var clearButton = document.getElementById('clearButton');
+//clearButton.addEventListener('click', clearScore)
 // Creates 1st input box on Window load
 newInputLine(0);
 </script>

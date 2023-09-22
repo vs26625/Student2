@@ -43,7 +43,7 @@ HTML implementation of the calculator.
     display: flex;
     align-items: center;
   }
-  .calculator-container {
+  /*.calculator-container {
     display: grid;
     grid-template-columns: rep(4, 1fr)
   }
