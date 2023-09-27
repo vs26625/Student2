@@ -37,36 +37,38 @@ courses: { compsci: {week: 6} }
         const SPRITE_WIDTH = 90;  // matches sprite pixel width
         const SPRITE_HEIGHT = 58; // matches sprite pixel height
         const SCALE_FACTOR = 2;  // control size of sprite on canvas
+        const DESIRED_FRAME_RATE = 1; // 1 frames per second
+        const FRAME_INTERVAL = 1000 / DESIRED_FRAME_RATE;
         const animationData = {
             'idle': {
                 frameLimit: 4,
-                x: 100, // X position for 'idle' animation
-                y: 100, // Y position for 'idle' animation
+                x: 18, // X position for 'idle' animation
+                y: -1, // Y position for 'idle' animation
             },
             'barking': {
                 frameLimit: 4,
-                x: 200, // X position for 'barking' animation
-                y: 150, // Y position for 'barking' animation
+                x: 18, // X position for 'barking' animation
+                y: 2, // Y position for 'barking' animation
             },
             'walking': {
                 frameLimit: 6,
-                x: 50, // X position for 'walking' animation
-                y: 200, // Y position for 'walking' animation
+                x: 18, // X position for 'walking' animation
+                y: -1, // Y position for 'walking' animation
             },
             'leaping': {
                 frameLimit: 5,
-                x: 50, // X position for 'walking' animation
-                y: 200, // Y position for 'walking' animation
+                x: 18, // X position for 'walking' animation
+                y: -1, // Y position for 'walking' animation
             },
             'sitting': {
                 frameLimit: 4,
-                x: 50, // X position for 'walking' animation
-                y: 200, // Y position for 'walking' animation
+                x: 18, // X position for 'walking' animation
+                y: -1, // Y position for 'walking' animation
             },
             'sit command': {
                 frameLimit: 3,
-                x: 50, // X position for 'walking' animation
-                y: 200, // Y position for 'walking' animation
+                x: 18, // X position for 'walking' animation
+                y: -1, // Y position for 'walking' animation
             }
         };
           // number of frames per row, this code assumes each row is different
@@ -84,6 +86,9 @@ courses: { compsci: {week: 6} }
                 this.y = 0;
                 this.scale = SCALE_FACTOR;
                 this.minFrame = 0;
+                this.frameY = 0;
+                this.frameX = 0;
+                this.maxFrame = 0;
             }
             setFrameLimit(limit) {
                 this.maxFrame = limit;
@@ -149,16 +154,21 @@ courses: { compsci: {week: 6} }
                 }
             }
         });
+        let lastTimestamp = 0;
         // Animation recursive control function
-        function animate() {
-            // Clears the canvas to remove the previous frame.
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            // Draws the current frame of the sprite.
-            husky.draw(ctx);
-            // Updates the `frameX` property to prepare for the next frame in the sprite sheet.
-            husky.update();
-            // Uses `requestAnimationFrame` to synchronize the animation loop with the display's refresh rate,
-            // ensuring smooth visuals.
+        function animate(timestamp) {
+            const deltaTime = timestamp - lastTimestamp;
+            if (deltaTime >= FRAME_INTERVAL) {
+                // Clears the canvas to remove the previous frame.
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                // Draws the current frame of the sprite.
+                husky.draw(ctx);
+                // Updates the `frameX` property to prepare for the next frame in the sprite sheet.
+                husky.update();
+                // Uses `requestAnimationFrame` to synchronize the animation loop with the display's refresh rate,
+                // ensuring smooth visuals.
+                lastTimestamp = timestamp;
+                }
             requestAnimationFrame(animate);
         }
         // run 1st animate
