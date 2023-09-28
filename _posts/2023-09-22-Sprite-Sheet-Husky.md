@@ -37,7 +37,7 @@ courses: { compsci: {week: 6} }
         const SPRITE_WIDTH = 90;  // matches sprite pixel width
         const SPRITE_HEIGHT = 58; // matches sprite pixel height
         const SCALE_FACTOR = 2;  // control size of sprite on canvas
-        const DESIRED_FRAME_RATE = 1; // 1 frames per second
+        const DESIRED_FRAME_RATE = 3; // 3 frames per second
         const FRAME_INTERVAL = 1000 / DESIRED_FRAME_RATE;
         const animationData = {
             'idle': {
