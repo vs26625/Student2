@@ -11,7 +11,7 @@ courses: { compsci: {week: 6} }
 <head>
   <div id="divContainerIDbutton">
       <h1 id="h1ElementIDbutton">Varnika's Mystery Button</h1>
-      <p id= "Unswitched"> HiHihi</p>
+      <p id= "Unswitched">Unswitched</p>
   </div>
   <!-- the ID must be specified on the elements -->
 <button id="buttonID">DONT PUSH THIS BUTTON</button>
