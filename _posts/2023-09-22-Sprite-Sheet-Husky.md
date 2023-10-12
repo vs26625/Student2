@@ -41,32 +41,32 @@ courses: { compsci: {week: 6} }
         const FRAME_INTERVAL = 1000 / DESIRED_FRAME_RATE;
         const animationData = {
             'idle': {
-                frameLimit: 4,
+                frameLimit: 3,
                 x: 18, // X position for 'idle' animation
                 y: -1, // Y position for 'idle' animation
             },
             'barking': {
-                frameLimit: 4,
+                frameLimit: 3,
                 x: 18, // X position for 'barking' animation
                 y: 2, // Y position for 'barking' animation
             },
             'walking': {
-                frameLimit: 6,
-                x: 18, // X position for 'walking' animation
-                y: -1, // Y position for 'walking' animation
-            },
-            'leaping': {
                 frameLimit: 5,
                 x: 18, // X position for 'walking' animation
                 y: -1, // Y position for 'walking' animation
             },
-            'sitting': {
+            'leaping': {
                 frameLimit: 4,
                 x: 18, // X position for 'walking' animation
                 y: -1, // Y position for 'walking' animation
             },
-            'sit command': {
+            'sitting': {
                 frameLimit: 3,
+                x: 18, // X position for 'walking' animation
+                y: -1, // Y position for 'walking' animation
+            },
+            'sit command': {
+                frameLimit: 2,
                 x: 18, // X position for 'walking' animation
                 y: -1, // Y position for 'walking' animation
             }
